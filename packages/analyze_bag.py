@@ -30,11 +30,11 @@ class TopicStats():
 
     def printStats(self):
         stats = self.topic + '\n' + \
-                'num messages:{} \nperiod:'.format(self.num_msgs) + \
-                '  min:{}\n'.format(np.amin(self.periods)) + \
-                '  max:{}\n'.format(np.amax(self.periods)) + \
-                '  average:{}\n'.format(np.mean(self.periods)) + \
-                '  median:{}\n'.format(np.median(self.periods))
+                'num messages:{} \nperiod:\n'.format(self.num_msgs) + \
+                '  min:{:.2f}\n'.format(np.amin(self.periods)) + \
+                '  max:{:.2f}\n'.format(np.amax(self.periods)) + \
+                '  average:{:.2f}\n'.format(np.mean(self.periods)) + \
+                '  median:{:.2f}\n'.format(np.median(self.periods))
         print(stats)
 
 
