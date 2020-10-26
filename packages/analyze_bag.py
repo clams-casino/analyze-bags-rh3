@@ -2,15 +2,12 @@ import rosbag
 import numpy as np
 import os
 
-# # For docker container, assume bags always mounted to this directory in the docker container
-# bag_dir = '/bags/'
+# Assume bags always mounted to this directory in the docker container
+bag_dir = '/bags/'
 
-# # Assume that we pass the bag name into the docker image with an environment variable
-# bag_name = os.environ['BAG_NAME']
-# bag_path = bag_dir + bag_name
-
-# For testing
-bag_path = '/home/mike/duckietown/RH4/bags/example_rosbag_H3.bag'
+# Assume that we pass the bag name into the docker image using an environment variable
+bag_name = os.environ['BAG_NAME']
+bag_path = bag_dir + bag_name
 
 
 class TopicStats():
